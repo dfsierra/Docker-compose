@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  proxy:
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - auth_service
+      - crud_service
+
+  auth_service:
+    build:
+      context: ./auth_service
+      dockerfile: Dockerfile
+
+  crud_service:
+    build:
+      context: ./crud_service
+      dockerfile: Dockerfile

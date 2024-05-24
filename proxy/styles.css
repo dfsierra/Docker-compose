@@ -1,0 +1,79 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #161b22;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-box {
+  margin-bottom: 20px;
+}
+
+.form-box h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #58a6ff;
+  text-align: center;
+}
+
+.form-box h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #58a6ff;
+  text-align: center;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #21262d;
+  color: #c9d1d9;
+}
+
+.form-box button {
+  background-color: #238636;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px 0; /* Add consistent margin */
+}
+
+.form-box button:hover {
+  background-color: #2ea043;
+}
+
+#response {
+  text-align: center;
+  margin-top: 20px;
+}
